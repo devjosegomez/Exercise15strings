@@ -1,8 +1,15 @@
 package com.exercise15strings.app;
 
+import com.exercise16strings.app.StringsTunned;
+
 public class StringsApp {
 
 	public static void main(String[] args) {
+		//replace vowels for O
+		//No caps
+		//obtener media aritmetica[] return 
+		
+		
 		String cad1 = "";
 		String cad2 = "";
 		cad1 = "We wish to colour the interior of each triangle with one of three colours: red, green or blue .Such a colouring shall be called valid. Here, two triangles are said to be neighbouring if they share an edge.        ";
@@ -36,6 +43,15 @@ public class StringsApp {
 		}
 		
 		System.out.println(reversedString);
+		
+		String[] misCadenas = {cad1, cad2};
+		String[] misNuevasCadenas = StringsTunned.Tunea(misCadenas);
+		for(int i=0; i<misNuevasCadenas.length; i++) {
+			System.out.println(misNuevasCadenas);
+		}
+		
+		int[] myIntegers = {1,2,3,4,5,6,7,8,9,10};
+		System.out.println("AVG is: " + StringsTunned.mediaVector(myIntegers));
 	}
 
 }
